@@ -18,6 +18,7 @@ func ChannelsMain() {
 		fmt.Println(<-c)
 		i++
 	}
+	close(c)
 }
 
 func checkLink(url string, c chan string) {
